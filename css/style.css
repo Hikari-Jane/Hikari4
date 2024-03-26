@@ -135,7 +135,7 @@ a {
 .grid {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .big_item {
@@ -175,6 +175,11 @@ a {
 @media (max-width: 1000px) {
     #contact_content {
         flex-direction: column;
+    }
+
+    #form {
+    width: 450px;
+    padding: 5%;
     }
     
     #instagram {
