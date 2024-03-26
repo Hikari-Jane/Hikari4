@@ -150,8 +150,12 @@ a {
 /* GALLERY ↑ */
 
 /* CONTACT ↓ */
+#contact_content {
+    display: flex;
+}
 
 #form {
+    width: 600px;
     padding: 5%;
 }
 
@@ -162,8 +166,20 @@ a {
 
 #instagram {
     max-width: 300px;
-    margin: auto;
     padding: 5%;
 }
 
 /* CONTACT ↑ */
+
+/* レスポンシブ↓ */
+@media (max-width: 1000px) {
+    #contact_content {
+        flex-direction: column;
+    }
+    
+    #instagram {
+    max-width: 200px;
+    padding: 5%;
+}
+
+/* レスポンシブ↑ */
